@@ -1,5 +1,5 @@
 
-class cat 
+class Cat 
 {
 constructor(
     catname,
@@ -71,7 +71,7 @@ function checkAll(testEvent){
         return return_gender;
     })();
 
-    let cat1 = new cat(
+    let cat1 = new Cat(
         document.querySelector("#catname").value,
         document.querySelector("#ownername").value,
         document.querySelector("#contact").value,

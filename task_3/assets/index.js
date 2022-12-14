@@ -1,6 +1,6 @@
 //задаю класс калькулятору
 
-class calculator 
+class Calculator 
 {
     constructor(a, b) {
         this.a = Number(a);
@@ -31,7 +31,7 @@ class calculator
 function sum(){
     //я создаю экземпляр калькулятора с параметрами a и b, которые являются свойством(параметром) value html объекта(элемента) (input с параметром id - a и b), который является результатом выполнения метода querySelector объекта document
 
-    let calc = new calculator(
+    let calc = new Calculator(
         document.querySelector('input[id="a"]').value,
         document.querySelector('input[id="b"]').value
     );
@@ -59,7 +59,7 @@ document.querySelector("button[id='sumBtn']").addEventListener('click', sum)
 
 function min(){
 
-    let calc = new calculator(
+    let calc = new Calculator(
         document.querySelector('input[id="a"]').value,
         document.querySelector('input[id="b"]').value
     );
@@ -75,7 +75,7 @@ document.querySelector("button[id='minBtn']").addEventListener('click', min)
 
 function multiply(){
 
-    let calc = new calculator(
+    let calc = new Calculator(
         document.querySelector('input[id="a"]').value,
         document.querySelector('input[id="b"]').value
     );
@@ -90,7 +90,7 @@ document.querySelector("button[id='multBtn']").addEventListener('click', multipl
 
 function divide(){
 
-    let calc = new calculator(
+    let calc = new Calculator(
         document.querySelector('input[id="a"]').value,
         document.querySelector('input[id="b"]').value
     );
