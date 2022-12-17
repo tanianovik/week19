@@ -25,6 +25,9 @@ class Calculator
     }
 }
 
+    let a = document.querySelector('input[id="a"]');
+    let b = document.querySelector('input[id="b"]');
+
 
 //задаю функцию суммы, которая будет вызываться при клике 
 
@@ -32,8 +35,8 @@ function sum(){
     //я создаю экземпляр калькулятора с параметрами a и b, которые являются свойством(параметром) value html объекта(элемента) (input с параметром id - a и b), который является результатом выполнения метода querySelector объекта document
 
     let calc = new Calculator(
-        document.querySelector('input[id="a"]').value,
-        document.querySelector('input[id="b"]').value
+        a.value,
+        b.value
     );
 
     //при вводе 2 параметров и клике на кнопку суммы мы запускаем функцию суммы и выводим результат в пустой div с id result
@@ -60,8 +63,8 @@ document.querySelector("button[id='sumBtn']").addEventListener('click', sum)
 function min(){
 
     let calc = new Calculator(
-        document.querySelector('input[id="a"]').value,
-        document.querySelector('input[id="b"]').value
+        a.value,
+        b.value
     );
 
     let minResult = calc.min();
@@ -76,8 +79,8 @@ document.querySelector("button[id='minBtn']").addEventListener('click', min)
 function multiply(){
 
     let calc = new Calculator(
-        document.querySelector('input[id="a"]').value,
-        document.querySelector('input[id="b"]').value
+        a.value,
+        b.value
     );
 
     let multiplyResult = calc.multiply();
@@ -91,8 +94,8 @@ document.querySelector("button[id='multBtn']").addEventListener('click', multipl
 function divide(){
 
     let calc = new Calculator(
-        document.querySelector('input[id="a"]').value,
-        document.querySelector('input[id="b"]').value
+        a.value,
+        b.value
     );
 
     let divideResult = calc.divide();
